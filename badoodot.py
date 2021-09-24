@@ -2,7 +2,8 @@ from time import sleep
 from selenium import webdriver
 from logs import mail, password
 
-driver = webdriver.Chrome("ваш путь до драйвера")
+path = 'your path to the local driver'
+driver = webdriver.Chrome(path)
 driver.get('https://badoo.com/signin/?f=top')
 sleep(5)
 search_mail = driver.find_element_by_name('email')
